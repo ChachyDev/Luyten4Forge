@@ -42,16 +42,15 @@ public class ExtractMappings extends Extractor implements Runnable {
 
                 File file = getResourceAsFile("mapping/" + currentMapping + "/" + fileName);
 
-                try (Scanner scanner = new Scanner(file)) {
+                if (file != null) {
+                    try (Scanner scanner = new Scanner(file)) {
 
-                    while (scanner.hasNextLine()) {
-                        String line = scanner.nextLine();
-                        String[] linesplit = line.split(",");
-                        mappings.put(linesplit[0], linesplit[1]);
+                        while (scanner.hasNextLine()) {
+                            String line = scanner.nextLine();
+                            String[] lineSplit = line.split(",");
+                            mappings.put(lineSplit[0], lineSplit[1]);
+                        }
                     }
-
-                    scanner.close();
-
                 }
             }
 
