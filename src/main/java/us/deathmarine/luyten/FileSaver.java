@@ -20,7 +20,7 @@ import javax.swing.JPopupMenu;
 import javax.swing.JProgressBar;
 import javax.swing.SwingUtilities;
 
-import com.kbrewster.mc.ExtractGradleForge;
+import com.kbrewster.mc.ExtractForgeGradle;
 import com.kbrewster.mc.ExtractMappings;
 import com.strobel.assembler.metadata.ITypeLoader;
 import com.strobel.assembler.metadata.JarTypeLoader;
@@ -128,7 +128,7 @@ public class FileSaver {
 	}
 
 	public void saveAllForgeDir(final File inFile, final File outFile) {
-		ExtractGradleForge forge = new ExtractGradleForge();
+		ExtractForgeGradle forge = new ExtractForgeGradle();
 		new Thread(() -> {
             long time = System.currentTimeMillis();
             try {
