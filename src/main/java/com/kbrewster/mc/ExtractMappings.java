@@ -21,7 +21,24 @@ public class ExtractMappings extends Extractor implements Runnable {
     /**
      * Cant use enums because they're numbers ._. so heartbreaking
      */
-    public static String[] versions = {"1.7.10", "1.8", "1.8.9", "1.9", "1.10.2", "1.11", "1.12.1"};
+    public static String[] versions = {
+            "1.7.10",
+            "1.8",
+            "1.8.9",
+            "1.9",
+            "1.10.2",
+            "1.11",
+            "1.12.1",
+            "1.13",
+            "1.13.1",
+            "1.13.2",
+            "1.14",
+            "1.14.1",
+            "1.14.2",
+            "1.14.3",
+            "1.14.4",
+            "1.15"
+    };
 
     public static String currentMapping = null;
     public static File currentFile;

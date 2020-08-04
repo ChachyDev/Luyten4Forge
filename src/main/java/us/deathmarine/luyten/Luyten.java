@@ -1,6 +1,7 @@
 package us.deathmarine.luyten;
 
 import com.kbrewster.mc.ExtractMappings;
+import com.kbrewster.mc.Extractor;
 
 import java.awt.Cursor;
 import java.awt.Desktop;
@@ -9,13 +10,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
-import java.io.StringWriter;
+import java.io.*;
 import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.List;
 import java.util.ArrayList;
@@ -44,7 +42,6 @@ public class Luyten {
 	private static final List<File> pendingFiles = new ArrayList<>();
 
 	public static void main(String[] args) {
-
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 			new Thread(new ExtractMappings()).start();

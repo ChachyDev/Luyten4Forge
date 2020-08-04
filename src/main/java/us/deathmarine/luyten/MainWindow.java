@@ -68,7 +68,7 @@ public class MainWindow extends JFrame {
 		this.setTitle(TITLE);
 		ClassLoader loader = this.getClass().getClassLoader();
 		this.setIconImage(new ImageIcon(
-				Toolkit.getDefaultToolkit().getImage(this.getClass().getResource("/resources/Luyten.png"))).getImage());
+				Toolkit.getDefaultToolkit().getImage(this.getClass().getResource("/Luyten.png"))).getImage());
 
 		JPanel panel1 = new JPanel(new FlowLayout(FlowLayout.LEFT));
 		label = new JLabel();

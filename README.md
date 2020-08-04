@@ -13,6 +13,9 @@ https://cdn.discordapp.com/attachments/248159333110644736/352536507992637441/1.p
 https://cdn.discordapp.com/attachments/248159333110644736/352536523524145152/2.png
 *****
 
+# Q&A
+Where do I get the mappings?
+Head over to http://export.mcpbot.bspk.rs/ and extract all the versions and drop them into resources/mapping
 
 
 
